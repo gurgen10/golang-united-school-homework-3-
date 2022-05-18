@@ -1,5 +1,7 @@
 package homework
 
+import "sort"
+
 func sortMapValues(input map[int]string) (result []string) {
 	var idxs []int
 	for i := range input {
@@ -9,5 +11,6 @@ func sortMapValues(input map[int]string) (result []string) {
 	for _, val := range idxs {
 		result = append(result,input[val])
 	}
+	
 	return result
 }
